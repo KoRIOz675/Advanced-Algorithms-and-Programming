@@ -15,6 +15,21 @@ public class exercise6_first_unique {
         System.err.println(firstUniqueOrderedDic("loveleetcode"));      // Output: 2
         System.err.println(firstUniqueOrderedDic("aabb"));              // Output: -1
         System.err.println(firstUniqueOrderedDic("dddccdbba"));         // Output: 8
+
+        System.err.println("Testing edge cases:");
+        // test edge cases
+        System.err.println(firstUniqueTwoPass(""));                     // Output: -1
+        System.err.println(firstUniqueTwoPass("a"));                    // Output: 0
+        System.err.println(firstUniqueTwoPass("aaa"));                  // Output: -1
+        System.err.println(firstUniqueTwoPass("abb"));                  // Output: 0
+        System.err.println(firstUniqueTwoPass("aab"));                  // Output: 2
+        System.err.println(firstUniqueTwoPass(null));                   // Output: -1
+        System.err.println(firstUniqueOrderedDic(""));                  // Output: -1
+        System.err.println(firstUniqueOrderedDic("a"));                 // Output: 0
+        System.err.println(firstUniqueOrderedDic("aaa"));               // Output: -1
+        System.err.println(firstUniqueOrderedDic("abb"));               // Output: 0
+        System.err.println(firstUniqueOrderedDic("aab"));               // Output: 2
+        System.err.println(firstUniqueOrderedDic(null));                // Output: -1
     }
 
     // Using two passes with frequency dictionary
