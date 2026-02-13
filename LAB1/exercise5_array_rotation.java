@@ -9,9 +9,9 @@ public class exercise5_array_rotation {
         System.err.println(Arrays.toString(rotationReverse(new int[]{1, 2, 3, 4, 5, 6, 7}, 10)));   // Output: [5, 6, 7, 1, 2, 3, 4]
 
         System.err.println("Testing edge cases:");
-        System.err.println(Arrays.toString(rotationTempArray(new int[]{1}, 1)));    // Output: [1]
-        System.err.println(Arrays.toString(rotationOneByOne(new int[]{1}, 1)));     // Output: [1]
-        System.err.println(Arrays.toString(rotationReverse(new int[]{1}, 1)));      // Output: [1]
+        System.err.println(Arrays.toString(rotationTempArray(new int[]{1}, 10)));    // Output: [1]
+        System.err.println(Arrays.toString(rotationOneByOne(new int[]{1}, 10)));     // Output: [1]
+        System.err.println(Arrays.toString(rotationReverse(new int[]{1}, 10)));      // Output: [1]
         System.err.println(Arrays.toString(rotationTempArray(new int[]{}, 3)));    // Output: []
         System.err.println(Arrays.toString(rotationOneByOne(new int[]{}, 3)));     // Output: []
         System.err.println(Arrays.toString(rotationReverse(new int[]{}, 3)));      // Output: []
@@ -21,6 +21,9 @@ public class exercise5_array_rotation {
         System.err.println(Arrays.toString(rotationTempArray(new int[]{1, 2, 3}, 0)));    // Output: [1, 2, 3]
         System.err.println(Arrays.toString(rotationOneByOne(new int[]{1, 2, 3}, 0)));     // Output: [1, 2, 3]
         System.err.println(Arrays.toString(rotationReverse(new int[]{1, 2, 3}, 0)));      // Output: [1, 2, 3]
+        System.err.println(Arrays.toString(rotationTempArray(null, 3)));    // Output: null
+        System.err.println(Arrays.toString(rotationOneByOne(null, 3)));     // Output: null
+        System.err.println(Arrays.toString(rotationReverse(null, 3)));      // Output: null
 
     }
 
