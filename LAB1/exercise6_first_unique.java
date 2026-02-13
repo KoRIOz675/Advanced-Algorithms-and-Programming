@@ -6,15 +6,15 @@ import java.util.Map;
 public class exercise6_first_unique {
 
     public static void main(String[] args) {
-        System.err.println(firstUniqueTwoPass("leetcode"));
-        System.err.println(firstUniqueTwoPass("loveleetcode"));
-        System.err.println(firstUniqueTwoPass("aabb"));
-        System.err.println(firstUniqueTwoPass("dddccdbba"));
+        System.err.println(firstUniqueTwoPass("leetcode"));             // Output: 0
+        System.err.println(firstUniqueTwoPass("loveleetcode"));         // Output: 2
+        System.err.println(firstUniqueTwoPass("aabb"));                 // Output: -1
+        System.err.println(firstUniqueTwoPass("dddccdbba"));            // Output: 8
 
-        System.err.println(firstUniqueOrderedDic("leetcode"));
-        System.err.println(firstUniqueOrderedDic("loveleetcode"));
-        System.err.println(firstUniqueOrderedDic("aabb"));
-        System.err.println(firstUniqueOrderedDic("dddccdbba"));
+        System.err.println(firstUniqueOrderedDic("leetcode"));          // Output: 0
+        System.err.println(firstUniqueOrderedDic("loveleetcode"));      // Output: 2
+        System.err.println(firstUniqueOrderedDic("aabb"));              // Output: -1
+        System.err.println(firstUniqueOrderedDic("dddccdbba"));         // Output: 8
     }
 
     // Using two passes with frequency dictionary
@@ -50,7 +50,7 @@ public class exercise6_first_unique {
             char ch = s.charAt(i);
             int[] entry = map.get(ch);
             if (entry == null) {
-                map.put(ch, new int[] { 1, i });
+                map.put(ch, new int[]{1, i});
             } else {
                 entry[0] += 1;
             }
