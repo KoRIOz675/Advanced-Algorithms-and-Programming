@@ -131,4 +131,5 @@ public class exercise4_mutual_followers_matrix {
         int following_count = get_following(user).size();
         return (double) (follower_count + following_count) / matrixSize;
     }
+    
 }

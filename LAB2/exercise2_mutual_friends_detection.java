@@ -72,4 +72,5 @@ public class exercise2_mutual_friends_detection {
         Set<Integer> union = unionFriends(set1, set2);
         return (float) ((double) intersection.size() / union.size());
     }
+
 }
